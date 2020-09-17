@@ -14,7 +14,7 @@
 
 Таргет: `is_bad`
 
-Данные находятся по ссылке https://drive.google.com/file/d/1dZncjyy0HwPx8XlyD6CtnnwPsKqOoLDQ/view?usp=sharing. 
+Данные находятся по ссылке https://drive.google.com/file/d/1IOo206jH0cbIMsWRfIZXwCeCAqysZLD3/view?usp=sharing.
 
 В датасете могут встречаться, как в любых реальных данных, некорректные метки.
 
@@ -47,7 +47,7 @@
 1. Docker-образ будет собираться командой:\
 ```docker build -t hiring-test -f Dockerfile .```
 2. Далее контейнер будет запускаться:\
-```docker run -it -v ~/goods/hiring-test/hiring-test-data:/hiring-test-data hiring-test python lib/run.py```
+```docker run -it -v ~/hiring-test/hiring-test-data:/hiring-test-data hiring-test python lib/run.py```
 3. Файлы с полученным предсказанием должны находиться по тому же пути, что и в тестовом варианте скрипта `lib/run.py`
 
 Обратите внимание, что в контейнере по умолчанию используется python3:
@@ -65,4 +65,4 @@
 
 # Baseline
 
-Текущий бэйзлайн, который надо побить для первой части - 0.9.
+Текущий бэйзлайн, который желательно побить - 0.9.
